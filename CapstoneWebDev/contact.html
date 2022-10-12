@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <title>Contact Page</title>
+</head>
+<!--
+
+-->
+<body>
+<div class="contactwrap">
+    <header>
+        <h1></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="log.html">Log-In</a></li>
+        </ul>
+    </nav>
+
+    <main id="indexmain">
+        <form class="form-inline">
+            <label for="name">First Name:</label>
+            <input type="text" name="name" id="name" placeholder="First Name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com"required>
+
+            <br/>
+
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" placeholder="Enter message here..." required></textarea>
+
+            <br/>
+
+            <button type="submit">
+                <a href="mailto:example@example.com?Subject=Educational%20Website%20Contact" target="__top">
+                    Submit
+                </a>
+            </button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>PiDon'tCare. <img src="email.ico"> pidontcare@gmail.com. <img src="phone.ico"> 1+888-888-8888. Copyright 2022 "Pi Don't Care Inc.". </p>
+    </footer>
+</div>
+</body>
+</html>
