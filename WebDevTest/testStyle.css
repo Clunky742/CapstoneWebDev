@@ -1,9 +1,19 @@
-body{
-    background-color: #ffffff;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
-h1 {
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b1b1b;
+}
+
+/* h1 {
     color: #6e0323;
     font-family: custom;
     text-align: center;
@@ -13,7 +23,7 @@ h2 {
     color: #6e0323;
     font-family: custom;
     text-align: center;
-}
+} */
 
 
 /*Grid Templates----------------------------------------------------------*/
@@ -25,6 +35,8 @@ h2 {
     grid-gap: 5px;
     margin:0 auto;
     max-width: 1920px;
+    /* border-color:black;
+    border: solid; */
 }
 
 #template *{
@@ -40,6 +52,8 @@ h2 {
     grid-gap: 5px;
     margin:0 auto;
     max-width: 1920px;
+    /* border-color:black;
+    border: solid; */
 }
 
 #homegrid *{
@@ -55,12 +69,28 @@ h2 {
     grid-gap: 5px;
     margin:0 auto;
     max-width: 1920px;
-    border-color:black;
-    border: solid;
+    /* border-color:black;
+    border: solid; */
 }
 
 #aboutgrid *{
     /* background:rgb(20, 112, 81); */
+    padding: 15px;
+}
+
+#settingsgrid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*Set row height*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    margin:0 auto;
+    max-width: 1920px;
+    /* border-color:black;
+    border: solid; */
+}
+
+#settingsgrid *{
     padding: 15px;
 }
 
@@ -70,23 +100,42 @@ h2 {
 #template > header{
     /*goes across all 12 columns*/
     grid-column: 7/13;
+    grid-row: 2/3;
+    border-color:black;
+    border: solid;
 }
 
-nav{
-    grid-column: 1/7;
+#template > nav{
+    grid-column: 1/12;
 }
 
-main{
+#template > main{
     grid-column: 3/11;
+    border-color:black;
+    border: solid;
 }
 
-footer{
+#template > footer{
     grid-column: 1/13;
+    border-color:black;
+    border: solid;
 }
 
 /*Home Page*/
 #homegrid > header{
     grid-column: 7/13;
+}
+
+#homegrid > nav{
+    grid-column: 1/7;
+}
+
+#homegrid > main{
+    grid-column: 3/11;
+}
+
+#homegrid > footer{
+    grid-column: 1/13;
 }
 
 /*About Page*/
@@ -102,8 +151,13 @@ footer{
 }
 
 #aboutgrid > footer{
+    grid-column: 1/13;
     border-color:black;
     border: solid;
+}
+
+#aboutgrid > nav{
+    grid-column: 1/7;
 }
 
 .imageone {
@@ -182,6 +236,39 @@ footer{
     display: grid;
     grid-column: 6/12;
     grid-row: 14/17;
+    border-color:black;
+    border: solid;
+}
+
+/*Settings Page*/
+#settingsgrid > header{
+    /*goes across all 12 columns*/
+    grid-column: 7/13;
+    border-color:black;
+    border: solid;
+}
+
+#settingsgrid > nav{
+    grid-column: 1/7;
+    border-color:black;
+    border: solid;
+}
+
+#settingsgrid > main{
+    grid-column: 2/7;
+    border-color:black;
+    border: solid;
+}
+
+#settingsgrid > section{
+    grid-column: 7/12;
+    border-color:black;
+    border: solid;
+}
+
+#settingsgrid > footer{
+    grid-column: 1/13;
+    /* grid-row: 5/6; */
     border-color:black;
     border: solid;
 }
