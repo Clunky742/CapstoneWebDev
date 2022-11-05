@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="testStyle.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+
+    <script src = "https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+        function showPosition() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showMap, showError);
+            } else {
+                alert("Sorry, this browser won't support HTML5 Geolocation.")
+            }
+        }
+
+        //Callback function for successful pass
+        function showMap(position) {
+            //Gets location data 
+            lat = position.coords.latitude; 
+            long = position.coords.longtitude;
+            var latlong = new google.maps.LatLng(lat, long);
+
+            var options = {
+                center: latlong,
+                zoom: 10,
+                mapTypeControl: true;
+                navigationControlOptions: {
+                    style:google:maps.navigationControlStyle.SMALL
+                }
+            }
+
+            var map = new google.maps.Map(document.getElementById("embedMap"), options);
+            var marker = new google.maps.Marker({ position:latlong, map:map, title:"Camera Location" });
+        }
+
+        //Callback function for faild attempts 
+        function viewErrors(error) {
+            if(error.code == 1) {
+                result.innerHTML = "You're are not showing your location. You will no longer be asked.";
+            } else if (error.code == 2){
+                result.innerHTML = "The network may be down or positioning services can not be reached.";
+            } else if (error.code == 3) {
+                result.innerHTML = "The attempt could not be made and location data was not recieved.";
+            } else if (error.code == 4) {
+                result.innerHTML = "Location could not be received due to unknown errors.";
+            }
+        }
+    </script>
+    <title>Account Page</title>
+</head>
+<!--
+Edited 11/3/22
+Jordan Carter
+Contact page v.1
+-->
+<body>
+
+    <div id = "loggrid">
+
+        <nav class = "stroke">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="log.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Pi Don't Care</h1>
+            <h2>Management Console</h2>
+            <h3>Account Page</h3>
+        </header>
+
+        <main>
+          <h4>"Account Name"</h4>
+          <button type = "button" onclick="showPosition();">Device Location</button>
+          <div id = "embedMap" style = "width: 200px; height: 100px;"> </div>
+        </main>
+
+        <section>
+
+        </section>
+
+        <footer>
+            <p>PiDon'tCare. pidontcare@gmail.com. 1+888-888-8888. Copyright 2022 "Pi Don't Care Inc.". All rights reserved. </p>
+        </footer>
+
+    </div>
+
+</body>

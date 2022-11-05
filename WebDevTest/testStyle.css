@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html {
+    min-height: 100%;
     font-size: 100%;
     box-sizing: border-box;
 }
@@ -13,17 +14,70 @@ body {
     background-color: #1b1b1b;
 }
 
-/* h1 {
+h1 {
     color: #6e0323;
-    font-family: custom;
     text-align: center;
 }
 
 h2 {
     color: #6e0323;
-    font-family: custom;
     text-align: center;
-} */
+}
+
+h3 {
+    color: #6e0323;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+  /* Add some margins for each label */
+.form-inline label {
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+}
+  
+  /* Style the input fields */
+.form-inline input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form-inline textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+  
+  /* Style the submit button */
+.form-inline button {
+    padding: 10px 20px;
+    background-color: rgb(141, 136, 207);
+    border: 1px solid #ddd;
+    color: white;
+}
+  
+.form-inline button:hover {
+    background-color: rgb(149, 168, 224);
+}
 
 
 /*Grid Templates----------------------------------------------------------*/
@@ -94,6 +148,33 @@ h2 {
     padding: 15px;
 }
 
+#contactgrid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*Set row height*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    margin:0 auto;
+    max-width: 1920px;
+    /* border-color:black;
+    border: solid; */
+}
+
+#contactgrid * :not(nav) {
+    padding: 15px;
+}
+
+#loggrid {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*Set row height*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    margin:0 auto;
+    max-width: 1920px;
+    /* border-color:black;
+    border: solid; */
+}
 
 /*Semantic Element Edits--------------------------------------------------*/
 /*Template Page*/
@@ -271,4 +352,46 @@ h2 {
     /* grid-row: 5/6; */
     border-color:black;
     border: solid;
+}
+
+/*Contact Page*/
+#contactgrid > header {
+    grid-column: 7/13;
+}
+
+#contactgrid > nav {
+    grid-column: 1/7;
+}
+
+#contactgrid > main {
+    grid-column: 4/10;
+}
+
+#contactgrid > footer {
+    grid-column: 1/13;
+}
+
+/*Log Page*/
+#loggrid > header {
+    grid-column: 7/13;
+}
+
+#loggrid > main {
+    grid-column: 2/7;
+    border-color:black;
+    border: solid;
+}
+
+#loggrid > section {
+    grid-column: 7/12;
+    border-color:black;
+    border: solid;
+}
+
+#loggrid > footer {
+    grid-column: 1/13;
+}
+
+#loggrid > nav {
+    grid-column: 1/13;
 }
