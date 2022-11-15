@@ -29,6 +29,11 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: #6e0323;
+    text-align: center;
+}
+
 p {
     color: white;
     text-align: center;
@@ -77,6 +82,12 @@ p {
   
 .form-inline button:hover {
     background-color: rgb(149, 168, 224);
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -198,6 +209,7 @@ p {
 
 #template > footer{
     grid-column: 1/13;
+    grid-row: 5/6;
     border-color:black;
     border: solid;
 }
@@ -217,6 +229,7 @@ p {
 
 #homegrid > footer{
     grid-column: 1/13;
+    grid-row-start: 5;
 }
 
 /*About Page*/
@@ -325,14 +338,14 @@ p {
 #settingsgrid > header{
     /*goes across all 12 columns*/
     grid-column: 7/13;
-    border-color:black;
-    border: solid;
+    /* border-color:black;
+    border: solid; */
 }
 
 #settingsgrid > nav{
     grid-column: 1/7;
-    border-color:black;
-    border: solid;
+    /* border-color:black;
+    border: solid; */
 }
 
 #settingsgrid > main{
@@ -350,8 +363,9 @@ p {
 #settingsgrid > footer{
     grid-column: 1/13;
     /* grid-row: 5/6; */
-    border-color:black;
-    border: solid;
+    /* border-color:black;
+    border: solid; */
+    grid-row-start: 4;
 }
 
 /*Contact Page*/
@@ -384,8 +398,6 @@ p {
 
 #loggrid > section {
     grid-column: 7/12;
-    border-color:black;
-    border: solid;
 }
 
 #loggrid > footer {
