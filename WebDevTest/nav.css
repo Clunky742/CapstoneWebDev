@@ -38,7 +38,7 @@ nav ul li a {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0px 10px;
-  border:rgb(0, 0, 0);
+  /* border:rgb(0, 0, 0); */
   /* border-color:black;
   border: solid; */
 }
