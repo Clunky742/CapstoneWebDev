@@ -220,7 +220,7 @@ iframe {
 }
 
 #homegrid > nav{
-    grid-column: 1/7;
+    grid-column: 1/13;
 }
 
 #homegrid > main{
