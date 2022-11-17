@@ -101,3 +101,26 @@ animation: fill 1s forwards;
 -moz-animation: fill 1s forwards;
 opacity: 1;
 }
+
+/*nav style's from Bronson's css*/
+.navbar {
+  background:#6e0323;
+}
+
+.nav-link,
+.navbar-brand {
+  color:aliceblue;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color:black;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
