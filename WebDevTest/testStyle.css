@@ -251,6 +251,7 @@ iframe {
 
 #aboutgrid > footer{
     grid-column: 1/13;
+    grid-row: 17;
     border-color:black;
     border: solid;
 }
