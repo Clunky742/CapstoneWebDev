@@ -84,6 +84,10 @@ p {
     background-color: rgb(149, 168, 224);
 }
 
+header {
+    text-align: center;
+}
+
 iframe {
     display: block;
     margin-left: auto;
@@ -216,11 +220,12 @@ iframe {
 
 /*Home Page*/
 #homegrid > header{
-    grid-column: 7/13;
+    grid-column: 1/13;
 }
 
 #homegrid > nav{
     grid-column: 1/13;
+    grid-row: 2/3;
 }
 
 #homegrid > main{
