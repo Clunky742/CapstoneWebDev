@@ -266,6 +266,7 @@ iframe {
     grid-row: 5/8;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .imagetwo {
@@ -274,6 +275,7 @@ iframe {
     grid-row: 8/11;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .imagethree {
@@ -282,6 +284,7 @@ iframe {
     grid-row: 11/14;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .imagefour {
@@ -290,6 +293,7 @@ iframe {
     grid-row: 14/17;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .imagefive {
@@ -298,6 +302,7 @@ iframe {
     grid-row: 17/20;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .bioMain {
@@ -306,6 +311,7 @@ iframe {
     grid-row: 2/5;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .bioOne {
@@ -314,7 +320,7 @@ iframe {
     grid-row: 5/8;
     border-color:black;
     border: solid;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .bioTwo {
@@ -323,6 +329,7 @@ iframe {
     grid-row: 8/11;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .bioThree {
@@ -331,6 +338,7 @@ iframe {
     grid-row: 11/14;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 .bioFour {
@@ -339,6 +347,7 @@ iframe {
     grid-row: 14/17;
     border-color:black;
     border: solid;
+    margin-bottom: 50px;
 }
 
 /*Settings Page*/
