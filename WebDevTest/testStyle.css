@@ -329,8 +329,6 @@ iframe {
     display: grid;
     grid-column: 6/12;
     grid-row: 14/17;
-    border-color:black;
-    border: solid;
     margin-bottom: 75px;
 }
 
