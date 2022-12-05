@@ -236,7 +236,7 @@ iframe {
 
 #homegrid > footer{
     grid-column: 1/13;
-    grid-row-start: 5;
+    grid-row-start: 4;
 }
 
 /*About Page*/
