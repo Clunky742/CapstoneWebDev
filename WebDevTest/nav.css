@@ -104,7 +104,7 @@ opacity: 1;
 
 /*nav style's from Bronson's css*/
 .navbar {
-  background:#131313;
+  background:#191970;
 }
 
 .nav-link,
@@ -118,7 +118,7 @@ opacity: 1;
 }
 
 .nav-link:hover {
-  color:#6e0323;
+  color: black;
 }
 
 .navbar-collapse {
