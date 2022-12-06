@@ -42,8 +42,9 @@ p {
 /* Style the form - display items horizontally */
 .form-inline {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #dfdddd;
     padding: 20px;
+    margin-top: 5px;
 }
   
   /* Add some margins for each label */
@@ -75,13 +76,14 @@ p {
   /* Style the submit button */
 .form-inline button {
     padding: 10px 20px;
-    background-color: rgb(141, 136, 207);
+    margin-top: 5px;
+    background-color: rgb(133, 133, 133);
     border: 1px solid #ddd;
     color: white;
 }
   
 .form-inline button:hover {
-    background-color: rgb(149, 168, 224);
+    background-color: #363636;
 }
 
 header {
@@ -254,8 +256,6 @@ iframe {
 #aboutgrid > footer{
     grid-column: 1/13;
     grid-row: 17;
-    border-color:black;
-    border: solid;
 }
 
 #aboutgrid > nav{
@@ -350,18 +350,28 @@ iframe {
 
 #settingsgrid > main{
     grid-column: 2/7;
-    margin-top: 110px;
+    grid-row-start: 1;
+    margin-top: 10px;
     margin-bottom: -110px;
     border-color:black;
     border: solid;
 }
 
+#settingsgrid > main > h4{
+    text-align: left;
+}
+
 #settingsgrid > section{
     grid-column: 7/12;
-    margin-top: 110px;
+    grid-row-start: 1;
+    margin-top: 10px;
     margin-bottom: -110px;
     border-color:black;
     border: solid;
+}
+
+#settingsgrid > section > h4{
+    text-align: left;
 }
 
 #settingsgrid > footer{
@@ -396,16 +406,33 @@ iframe {
 
 #loggrid > main {
     grid-column: 2/7;
+    margin-top: 5px;
     border-color:black;
     border: solid;
 }
 
+/*Align Button Code*/
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 26%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 #loggrid > section {
     grid-column: 7/12;
+    margin-top: 5px;
 }
 
 #loggrid > footer {
     grid-column: 1/13;
+    grid-row-start: 2;
+    margin-top: 100px;
+    padding-top: 25px;
+    /* border-color:black;
+    border: solid; */
 }
 
 #loggrid > nav {
